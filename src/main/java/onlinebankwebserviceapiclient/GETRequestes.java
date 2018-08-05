@@ -23,6 +23,9 @@ public class GETRequestes {
                   + "api/customers/"); 
           
           List<Customer> list = gson.fromJson(jsonString, new TypeToken<List<Customer>>(){}.getType());
+         // System.out.print("hey *** "+list.);
+         
+         
           return list;
 	}
 //------------------Retruns customer with a given ID----------------------------
@@ -40,6 +43,7 @@ public class GETRequestes {
                   + "api/customers/"+id+"/accounts"); 
           
           List<Account> list = gson.fromJson(jsonString, new TypeToken<List<Account>>(){}.getType());
+          
           return list;
 	}
 //--------Returns account details for account with account number---------------
